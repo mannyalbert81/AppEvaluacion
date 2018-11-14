@@ -10,7 +10,7 @@ function onDeviceReady()
 	
 }
 
-var online;
+var online=0;
 
 function checkConnection() {
 	  
@@ -68,7 +68,7 @@ function procesos() {
    	    	   if(error=="NO"){
 			  		
    	    		 
-   	    		   if(online==1){
+   	    		   if(online=='1'){
    	    		   
 	   	    		   $.ajax({
 	   	    			   type: 'GET',
@@ -131,7 +131,7 @@ function procesos() {
       	    	   
       	    	   if(error=="NO"){
    			  		
-      	    		 
+      	    		 if(online=='1'){
       	    		   $.ajax({
       	    			   type: 'GET',
       	    			   url: base_url+pag_service,
@@ -156,7 +156,14 @@ function procesos() {
       	    			});
       	    		
       	    		   
-   			  }
+   			      } else{
+   			   
+	    			 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
+	    	 	 	$("#cedula").val("");
+	    			   
+	    		   }
+      	    		 
+      	    	   }
        	    	   
        		});
     		
@@ -186,7 +193,7 @@ function procesos() {
       	    	   
       	    	   if(error=="NO"){
    			  		
-      	    		 
+      	    		 if(online=='1'){
       	    		   $.ajax({
       	    			   type: 'GET',
       	    			   url: base_url+pag_service,
@@ -210,6 +217,12 @@ function procesos() {
 
       	    			});
       	    		
+      	    		 } else{
+      	   			   
+   	    			 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
+   	    	 	 	 $("#cedula").val("");
+   	    			   
+   	    		   }
       	    		   
    			  }
        	    	   
@@ -242,7 +255,7 @@ function procesos() {
       	    	   
       	    	   if(error=="NO"){
    			  		
-      	    		 
+      	    		 if(online=='1'){
       	    		   $.ajax({
       	    			   type: 'GET',
       	    			   url: base_url+pag_service,
@@ -265,7 +278,12 @@ function procesos() {
       	    			 }
 
       	    			});
-      	    		
+      	    		} else{
+       	   			   
+      	    			 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
+      	    	 	 	 $("#cedula").val("");
+      	    			   
+      	    		   }
       	    		   
    			  }
        	    	   
