@@ -1,14 +1,7 @@
 
-$(document).on("ready",onDeviceReady);
-
-document.addEventListener("deviceready", onDeviceReady, false);
+$(document).on("ready",checkConnection);
 
 
-function onDeviceReady() 
-{
-	checkConnection();
-	
-}
 
 var online=0;
 
