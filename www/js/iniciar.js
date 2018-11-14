@@ -1,13 +1,14 @@
 $(document).on("ready",procesos);
 
 
-var online;
+
 
 
 
 
 function procesos() {
-	
+	/*
+	var online;
 	var networkState = navigator.network.connection.type;
     var states = {};
     
@@ -22,7 +23,7 @@ function procesos() {
     online=states[networkState];
    
      if (online=='1'){
-	
+	*/
     	    var base_url = 'http://192.168.1.129:4000/webcapremci/webservices_evaluacion/';
     		var pag_service = 'SincronizacionService.php?jsoncallback=?' ;
     		var nombre_usuarios = "";
@@ -248,14 +249,14 @@ function procesos() {
     		 
     		 
      
-     
+     /*
     }else{
     	
     	
     	 alert("Tu dispositivo no tiene internet.");
     	 $("#cedula").val("");
     }
-     
+     */
 }
 
 
