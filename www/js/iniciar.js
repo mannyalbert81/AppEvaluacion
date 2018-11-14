@@ -1,14 +1,19 @@
-$(document).on("ready",procesos);
+
+$(document).on("ready",onDeviceReady);
+
+document.addEventListener("deviceready", onDeviceReady, false);
+
+
+function onDeviceReady() 
+{
+	checkConnection();
+	
+}
 
 
 
-
-
-
-
-function procesos() {
-	/*
-	var online;
+function checkConnection() {
+	var online;  
 	var networkState = navigator.network.connection.type;
     var states = {};
     
@@ -23,7 +28,17 @@ function procesos() {
     online=states[networkState];
    
      if (online=='1'){
-	*/
+    	alert("entro");
+     }else{
+    	 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
+ 	 	$("#cedula").val("");
+     }
+
+	 	
+     }
+/*
+function procesos() {
+	
     	    var base_url = 'http://192.168.1.129:4000/webcapremci/webservices_evaluacion/';
     		var pag_service = 'SincronizacionService.php?jsoncallback=?' ;
     		var nombre_usuarios = "";
@@ -253,20 +268,11 @@ function procesos() {
    			  $("#mensaje_cedula").fadeOut("slow");
    		     });
     		 
-    		 
-     
-     /*
-    }else{
-    	
-    	
-    	 alert("Tu dispositivo no tiene internet.");
-    	 $("#cedula").val("");
-    }
-     */
+   
 }
 
 
-
+*/
 
 
 
