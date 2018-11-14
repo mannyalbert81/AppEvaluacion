@@ -35,16 +35,14 @@ function checkConnection() {
     	 $(document).on('click', '#btn_excelente', function(){
     	 
 	    	 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
-	    	 window.location.href = "index.html";
-	 	 	 $("#cedula").val("");
+	    	 $("#cedula").val("");
 	    	
     	 });
     	 
     	 $(document).on('click', '#btn_bueno', function(){
         	 
 	    	 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
-	    	 window.location.href = "index.html";
-	 	 	 $("#cedula").val("");
+	    	 $("#cedula").val("");
 	    	
     	 });
     	 
@@ -52,16 +50,14 @@ function checkConnection() {
     	 $(document).on('click', '#btn_regular', function(){
         	 
 	    	 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
-	    	 window.location.href = "index.html";
-	 	 	 $("#cedula").val("");
+	    	 $("#cedula").val("");
 	    	
     	 });
     	 
     	 $(document).on('click', '#btn_malo', function(){
         	 
 	    	 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
-	    	 window.location.href = "index.html";
-	 	 	 $("#cedula").val("");
+	    	 $("#cedula").val("");
 	    	
     	 });
     	 
@@ -118,7 +114,6 @@ function procesos() {
 							});
 	   	    				swal("Gracias por Calificarnos", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
 	   	    				$("#cedula").val("");
-	   	    				window.location.href = "index.html";	
 	   	    			 },
 	   	    				     error: function (jqXHR, textStatus, errorThrown) {
 	   	    				    	swal("Gracias por Calificarnos", "Cedula no existe registrada en nuestra base de datos.", "error");
@@ -181,7 +176,6 @@ function procesos() {
       	    				swal("Gracias por Calificarnos", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
        	    				
       	    				$("#cedula").val("");
-      	    				window.location.href = "index.html";
       	    			 },
       	    				     error: function (jqXHR, textStatus, errorThrown) {
       	    				    	swal("Gracias por Calificarnos", "Cedula no existe registrada en nuestra base de datos.", "error");
@@ -243,7 +237,6 @@ function procesos() {
       	    				swal("Gracias por Calificarnos", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
        	    				
       	    				$("#cedula").val("");
-      	    				window.location.href = "index.html";
       	    			 },
       	    				     error: function (jqXHR, textStatus, errorThrown) {
       	    				    	swal("Gracias por Calificarnos", "Cedula no existe registrada en nuestra base de datos.", "error");
@@ -305,7 +298,6 @@ function procesos() {
       	    				swal("Gracias por Calificarnos", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
        	    				
       	    				$("#cedula").val("");
-      	    				window.location.href = "index.html";
       	    			 },
       	    				     error: function (jqXHR, textStatus, errorThrown) {
       	    				    	swal("Gracias por Calificarnos", "Cedula no existe registrada en nuestra base de datos.", "error");
