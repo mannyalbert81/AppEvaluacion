@@ -28,6 +28,7 @@ function checkConnection() {
     online=states[networkState];
    
      if (online=='1'){
+    	 
     	 procesos();
      }else{
     	 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
@@ -47,7 +48,7 @@ function procesos() {
      		
    			 var cedula = $("#cedula").val();
    			 var calificacion = "Excelente";
-   			 var imei= "358240051111110";
+   			 var imei= "1111111111";
    	    	 var error="";
 
    	    	   if (cedula == "")
@@ -103,7 +104,7 @@ function procesos() {
          		
       			 var cedula = $("#cedula").val();
       			 var calificacion = "Bueno";
-      			 var imei= "358240051111110";
+      			 var imei= "1111111111";
       	    	 var error="";
 
       	    	   if (cedula == "")
@@ -158,7 +159,7 @@ function procesos() {
          		
       			 var cedula = $("#cedula").val();
       			 var calificacion = "Regular";
-      			 var imei= "358240051111110";
+      			 var imei= "1111111111";
       	    	 var error="";
 
       	    	   if (cedula == "")
@@ -214,7 +215,7 @@ function procesos() {
          		
       			 var cedula = $("#cedula").val();
       			 var calificacion = "Malo";
-      			 var imei= "358240051111110";
+      			 var imei= "1111111111";
       	    	 var error="";
 
       	    	   if (cedula == "")
