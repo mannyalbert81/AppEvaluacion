@@ -102,7 +102,7 @@ function procesos() {
    	    	   
    	    	   if(error=="NO"){
 			  		
-   	    		checkConnection();
+   	    		
    	    		
    	    		   if(online=='1'){
    	    		   
@@ -130,8 +130,7 @@ function procesos() {
    	    		   }else{
    	    			   
    	    			 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
-   	    			 window.location.href = "index.html";
-   	    	 	 	$("#cedula").val("");
+   	    			$("#cedula").val("");
    	    			   
    	    		   }
    	    		   
@@ -166,7 +165,7 @@ function procesos() {
    					}
       	    	   
       	    	   if(error=="NO"){
-      	    		 checkConnection();
+      	    		
       	    		 if(online=='1'){
       	    		   $.ajax({
       	    			   type: 'GET',
@@ -195,8 +194,7 @@ function procesos() {
    			      } else{
    			   
 	    			 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
-	    			 window.location.href = "index.html";
-	    	 	 	$("#cedula").val("");
+	    			$("#cedula").val("");
 	    			   
 	    		   }
       	    		 
@@ -229,7 +227,7 @@ function procesos() {
    					}
       	    	   
       	    	   if(error=="NO"){
-      	    		 checkConnection();
+      	    		 
       	    		 if(online=='1'){
       	    		   $.ajax({
       	    			   type: 'GET',
@@ -257,8 +255,7 @@ function procesos() {
       	    		 } else{
       	   			   
    	    			 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
-   	    			 window.location.href = "index.html";
-   	    	 	 	 $("#cedula").val("");
+   	    			 $("#cedula").val("");
    	    			   
    	    		   }
       	    		   
@@ -292,7 +289,7 @@ function procesos() {
    					}
       	    	   
       	    	   if(error=="NO"){
-      	    		 checkConnection();
+      	    		 
       	    		 if(online=='1'){
       	    		   $.ajax({
       	    			   type: 'GET',
@@ -319,8 +316,7 @@ function procesos() {
       	    		} else{
        	   			   
       	    			 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
-      	    			 window.location.href = "index.html";
-      	    	 	 	 $("#cedula").val("");
+      	    			 $("#cedula").val("");
       	    			   
       	    		   }
       	    		   
