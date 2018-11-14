@@ -1,5 +1,5 @@
 
-//$(document).on("ready",checkConnection);
+$(document).on("ready",checkConnection);
 
 
 
