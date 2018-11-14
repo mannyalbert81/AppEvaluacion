@@ -28,7 +28,7 @@ function checkConnection() {
     online=states[networkState];
    
      if (online=='1'){
-    	alert("entro");
+    	 procesos();
      }else{
     	 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
  	 	$("#cedula").val("");
@@ -36,7 +36,7 @@ function checkConnection() {
 
 	 	
      }
-/*
+
 function procesos() {
 	
     	    var base_url = 'http://192.168.1.129:4000/webcapremci/webservices_evaluacion/';
@@ -272,7 +272,7 @@ function procesos() {
 }
 
 
-*/
+
 
 
 
