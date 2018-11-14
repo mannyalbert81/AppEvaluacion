@@ -31,39 +31,10 @@ function checkConnection() {
     	 
     	 procesos();
      }else{
-    	
-    	 $(document).on('click', '#btn_excelente', function(){
     	 
 	    	 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
 	    	 $("#cedula").val("");
-	    	
-    	 });
-    	 
-    	 $(document).on('click', '#btn_bueno', function(){
-        	 
-	    	 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
-	    	 $("#cedula").val("");
-	    	
-    	 });
-    	 
-    	 
-    	 $(document).on('click', '#btn_regular', function(){
-        	 
-	    	 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
-	    	 $("#cedula").val("");
-	    	
-    	 });
-    	 
-    	 $(document).on('click', '#btn_malo', function(){
-        	 
-	    	 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
-	    	 $("#cedula").val("");
-	    	
-    	 });
-    	 
-    	 
-    	 
-    	 
+		 
      }
 
 	 	
