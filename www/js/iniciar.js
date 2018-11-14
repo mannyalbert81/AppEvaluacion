@@ -3,24 +3,9 @@ $(document).on("ready",checkConnection);
 
 
 
-var online=0;
 
 function checkConnection() {
-	  
-	var networkState = navigator.network.connection.type;
-    var states = {};
-    
-    states[Connection.UNKNOWN]  = '1';  //Conexión desconocida;
-    states[Connection.ETHERNET] = '1';  //Conexión ethernet;
-    states[Connection.WIFI]     = '1';  //Conexión WiFi';
-    states[Connection.CELL_2G]  = '1';  //Conexión movil 2G';
-    states[Connection.CELL_3G]  = '1';  //Conexión movil 3G';
-    states[Connection.CELL_4G]  = '1';  //Conexión movil 4G';
-    states[Connection.NONE]     = '0';  //Sin conexión';
-      
-    online=states[networkState];
-   
-	     if (online=='1'){
+	 
 	    	 
 	    	
 	    	 var base_url = 'http://192.168.1.129:4000/webcapremci/webservices_evaluacion/';
@@ -251,22 +236,12 @@ function checkConnection() {
 	    		 
 	    	 
 	    	 
-	     }else{
-	    	 
-		    	 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
-		    	 $("#cedula").val("");
-			 
-	     }
+	    
 	 	
      }
 
 
 
-function procesos() {
-	
-    	   
-   
-}
 
 
 
