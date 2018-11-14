@@ -35,6 +35,7 @@ function checkConnection() {
     	 $(document).on('click', '#btn_excelente', function(){
     	 
 	    	 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
+	    	 window.location.href = "index.html";
 	 	 	 $("#cedula").val("");
 	    	
     	 });
@@ -42,6 +43,7 @@ function checkConnection() {
     	 $(document).on('click', '#btn_bueno', function(){
         	 
 	    	 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
+	    	 window.location.href = "index.html";
 	 	 	 $("#cedula").val("");
 	    	
     	 });
@@ -50,6 +52,7 @@ function checkConnection() {
     	 $(document).on('click', '#btn_regular', function(){
         	 
 	    	 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
+	    	 window.location.href = "index.html";
 	 	 	 $("#cedula").val("");
 	    	
     	 });
@@ -57,6 +60,7 @@ function checkConnection() {
     	 $(document).on('click', '#btn_malo', function(){
         	 
 	    	 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
+	    	 window.location.href = "index.html";
 	 	 	 $("#cedula").val("");
 	    	
     	 });
@@ -98,7 +102,8 @@ function procesos() {
    	    	   
    	    	   if(error=="NO"){
 			  		
-   	    		 
+   	    		checkConnection();
+   	    		
    	    		   if(online=='1'){
    	    		   
 	   	    		   $.ajax({
@@ -112,8 +117,7 @@ function procesos() {
 								nombre_usuarios  =  j.nombre_usuarios;
 							});
 	   	    				swal("Gracias por Calificarnos", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
-	   	    				
-		   	    				$("#cedula").val("");
+	   	    				$("#cedula").val("");
 		   	    				
 	   	    			 },
 	   	    				     error: function (jqXHR, textStatus, errorThrown) {
@@ -126,6 +130,7 @@ function procesos() {
    	    		   }else{
    	    			   
    	    			 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
+   	    			 window.location.href = "index.html";
    	    	 	 	$("#cedula").val("");
    	    			   
    	    		   }
@@ -161,7 +166,7 @@ function procesos() {
    					}
       	    	   
       	    	   if(error=="NO"){
-   			  		
+      	    		 checkConnection();
       	    		 if(online=='1'){
       	    		   $.ajax({
       	    			   type: 'GET',
@@ -190,6 +195,7 @@ function procesos() {
    			      } else{
    			   
 	    			 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
+	    			 window.location.href = "index.html";
 	    	 	 	$("#cedula").val("");
 	    			   
 	    		   }
@@ -223,7 +229,7 @@ function procesos() {
    					}
       	    	   
       	    	   if(error=="NO"){
-   			  		
+      	    		 checkConnection();
       	    		 if(online=='1'){
       	    		   $.ajax({
       	    			   type: 'GET',
@@ -251,6 +257,7 @@ function procesos() {
       	    		 } else{
       	   			   
    	    			 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
+   	    			 window.location.href = "index.html";
    	    	 	 	 $("#cedula").val("");
    	    			   
    	    		   }
@@ -285,7 +292,7 @@ function procesos() {
    					}
       	    	   
       	    	   if(error=="NO"){
-   			  		
+      	    		 checkConnection();
       	    		 if(online=='1'){
       	    		   $.ajax({
       	    			   type: 'GET',
@@ -312,6 +319,7 @@ function procesos() {
       	    		} else{
        	   			   
       	    			 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
+      	    			 window.location.href = "index.html";
       	    	 	 	 $("#cedula").val("");
       	    			   
       	    		   }
