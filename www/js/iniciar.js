@@ -118,7 +118,7 @@ function procesos() {
 							});
 	   	    				swal("Gracias por Calificarnos", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
 	   	    				$("#cedula").val("");
-		   	    				
+	   	    				window.location.href = "index.html";	
 	   	    			 },
 	   	    				     error: function (jqXHR, textStatus, errorThrown) {
 	   	    				    	swal("Gracias por Calificarnos", "Cedula no existe registrada en nuestra base de datos.", "error");
@@ -181,7 +181,7 @@ function procesos() {
       	    				swal("Gracias por Calificarnos", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
        	    				
       	    				$("#cedula").val("");
-   	   	    				
+      	    				window.location.href = "index.html";
       	    			 },
       	    				     error: function (jqXHR, textStatus, errorThrown) {
       	    				    	swal("Gracias por Calificarnos", "Cedula no existe registrada en nuestra base de datos.", "error");
@@ -243,7 +243,7 @@ function procesos() {
       	    				swal("Gracias por Calificarnos", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
        	    				
       	    				$("#cedula").val("");
-   	   	    				
+      	    				window.location.href = "index.html";
       	    			 },
       	    				     error: function (jqXHR, textStatus, errorThrown) {
       	    				    	swal("Gracias por Calificarnos", "Cedula no existe registrada en nuestra base de datos.", "error");
@@ -305,7 +305,7 @@ function procesos() {
       	    				swal("Gracias por Calificarnos", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
        	    				
       	    				$("#cedula").val("");
-   	   	    				
+      	    				window.location.href = "index.html";
       	    			 },
       	    				     error: function (jqXHR, textStatus, errorThrown) {
       	    				    	swal("Gracias por Calificarnos", "Cedula no existe registrada en nuestra base de datos.", "error");
