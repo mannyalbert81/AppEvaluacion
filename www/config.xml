@@ -20,7 +20,6 @@
     <!--<plugin name="cordova-plugin-email-composer" version="0.8.3" source="npm" />-->
 	
 	
-	
  <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />

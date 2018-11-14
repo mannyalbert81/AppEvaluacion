@@ -3,7 +3,7 @@ $(document).on("ready",checkConnection);
 
 
 
-var online;
+var online = 0;
 function checkConnection() {
 	 
 	var networkState = navigator.network.connection.type;
@@ -75,10 +75,12 @@ function procesos_con_internet() {
 						});
   	    				swal("Gracias por Calificarnos", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
   	    				$("#cedula").val("");
+  	    				
   	    			 },
   	    				     error: function (jqXHR, textStatus, errorThrown) {
   	    				    	swal("Gracias por Calificarnos", "Cedula no existe registrada en nuestra base de datos.", "error");
   	    				    	$("#cedula").val("");
+  	    				    	
   	    			 }
 
   	    			});
