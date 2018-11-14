@@ -10,10 +10,10 @@ function onDeviceReady()
 	
 }
 
-
+var online;
 
 function checkConnection() {
-	var online;  
+	  
 	var networkState = navigator.network.connection.type;
     var states = {};
     
@@ -68,28 +68,36 @@ function procesos() {
    	    	   if(error=="NO"){
 			  		
    	    		 
-   	    		   $.ajax({
-   	    			   type: 'GET',
-   	    			   url: base_url+pag_service,
-   	    			   data:{cedula:cedula, calificacion:calificacion, imei:imei},
-   	    			   dataType: 'json',
-   	    			   success: function (x) {
-   	    				 
-   	    				$.each(x, function(i, j) {			
-							nombre_usuarios  =  j.nombre_usuarios;
-						});
-   	    				swal("Gracias por Calificarnos", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
-   	    				
-	   	    				$("#cedula").val("");
+   	    		   if(online==1){
+   	    		   
+	   	    		   $.ajax({
+	   	    			   type: 'GET',
+	   	    			   url: base_url+pag_service,
+	   	    			   data:{cedula:cedula, calificacion:calificacion, imei:imei},
+	   	    			   dataType: 'json',
+	   	    			   success: function (x) {
+	   	    				 
+	   	    				$.each(x, function(i, j) {			
+								nombre_usuarios  =  j.nombre_usuarios;
+							});
+	   	    				swal("Gracias por Calificarnos", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
 	   	    				
-   	    			 },
-   	    				     error: function (jqXHR, textStatus, errorThrown) {
-   	    				    	swal("Gracias por Calificarnos", "Cedula no existe registrada en nuestra base de datos.", "error");
-   	    				    	$("#cedula").val("");
-   	    			 }
-
-   	    			});
-   	    		
+		   	    				$("#cedula").val("");
+		   	    				
+	   	    			 },
+	   	    				     error: function (jqXHR, textStatus, errorThrown) {
+	   	    				    	swal("Gracias por Calificarnos", "Cedula no existe registrada en nuestra base de datos.", "error");
+	   	    				    	$("#cedula").val("");
+	   	    			 }
+	
+	   	    			});
+   	    		   
+   	    		   }else{
+   	    			   
+   	    			 swal("Capremci Informa", "Tu dispositivo no tiene internet.", "error");
+   	    	 	 	$("#cedula").val("");
+   	    			   
+   	    		   }
    	    		   
 			  }
     	    	   
