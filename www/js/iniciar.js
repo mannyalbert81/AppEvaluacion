@@ -77,13 +77,13 @@ function procesos() {
    	    				$.each(x, function(i, j) {			
 							nombre_usuarios  =  j.nombre_usuarios;
 						});
-   	    				swal("Capremci Informa", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
+   	    				swal("Gracias por Calificarnos", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
    	    				
 	   	    				$("#cedula").val("");
 	   	    				
    	    			 },
    	    				     error: function (jqXHR, textStatus, errorThrown) {
-   	    				    	swal("Capremci Informa", "Cedula no existe registrada en nuestra base de datos.", "error");
+   	    				    	swal("Gracias por Calificarnos", "Cedula no existe registrada en nuestra base de datos.", "error");
    	    				    	$("#cedula").val("");
    	    			 }
 
@@ -134,13 +134,13 @@ function procesos() {
    							nombre_usuarios  =  j.nombre_usuarios;
    						});
       	    					
-      	    				swal("Capremci Informa", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
+      	    				swal("Gracias por Calificarnos", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
        	    				
       	    				$("#cedula").val("");
    	   	    				
       	    			 },
       	    				     error: function (jqXHR, textStatus, errorThrown) {
-      	    				    	swal("Capremci Informa", "Cedula no existe registrada en nuestra base de datos.", "error");
+      	    				    	swal("Gracias por Calificarnos", "Cedula no existe registrada en nuestra base de datos.", "error");
       	    				    	$("#cedula").val("");
       	    			 }
 
@@ -189,13 +189,13 @@ function procesos() {
    							nombre_usuarios  =  j.nombre_usuarios;
    						});
       	    					
-      	    				swal("Capremci Informa", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
+      	    				swal("Gracias por Calificarnos", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
        	    				
       	    				$("#cedula").val("");
    	   	    				
       	    			 },
       	    				     error: function (jqXHR, textStatus, errorThrown) {
-      	    				    	swal("Capremci Informa", "Cedula no existe registrada en nuestra base de datos.", "error");
+      	    				    	swal("Gracias por Calificarnos", "Cedula no existe registrada en nuestra base de datos.", "error");
       	    				    	$("#cedula").val("");
       	    			 }
 
@@ -245,13 +245,13 @@ function procesos() {
    							nombre_usuarios  =  j.nombre_usuarios;
    						});
       	    					
-      	    				swal("Capremci Informa", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
+      	    				swal("Gracias por Calificarnos", "Hola "+nombre_usuarios+" tu calificación se registro correctamente.", "success");	
        	    				
       	    				$("#cedula").val("");
    	   	    				
       	    			 },
       	    				     error: function (jqXHR, textStatus, errorThrown) {
-      	    				    	swal("Capremci Informa", "Cedula no existe registrada en nuestra base de datos.", "error");
+      	    				    	swal("Gracias por Calificarnos", "Cedula no existe registrada en nuestra base de datos.", "error");
       	    				   $("#cedula").val("");
       	    			 }
 
