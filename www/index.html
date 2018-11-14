@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+	<title>Capremci</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/estilos.css">
+        <script src="js/jquery-3.2.1.js"></script>
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
+	    
+	 
+	 </head>
+	 
+	 
+	 
+	 <body>
+	  <img id="header"  style="width:100%" src="img/logo_inicio.jpg" />
+	 <div  class="col-lg-12 col-xs-12 col-md-12" style="text-align: center; margin-top: 20px;">
+	   	    <h4><b>CALIFICAR ATENCIÓN</b></h4>
+              <div class="row">
+                    		    <div class="col-lg-12 col-xs-12 col-md-12" style="text-align: center; margin-top:10px">
+                    		    <div class="form-group">
+                                                      <input type="number" class="form-control" id="cedula" name="cedula" value="" placeholder="ingrese número de cedula..">
+                                                      <div id="mensaje_cedula" class="errores"></div>
+                                </div>
+                                </div>
+               </div>
+        
+               <div class="row">
+                                					 
+                    		    <div class="col-xs-12 col-md-12 col-lg-12" style="text-align: center; margin-top:10px">
+                    		    <div class="form-group">
+                                                      <button type="button" id="btn_excelente" name="btn_excelente" class="btn btn-primary btn-lg btn-block" style="height:80px;">EXCELENTE</button>
+                                					 
+                                </div>
+                    		    </div>
+              </div>
+                    		    
+              <div class="row">
+                                					 
+                    		    <div class="col-xs-12 col-md-12 col-lg-12" style="text-align: center; margin-top:10px">
+                    		    <div class="form-group">
+                                                      <button type="button" id="btn_bueno" name="btn_bueno" class="btn btn-success btn-lg btn-block" style="height:80px;">BUENO</button>
+                                					 
+                                </div>
+                    		    </div>
+              </div>
+              
+               <div class="row">
+                                					 
+                    		    <div class="col-xs-12 col-md-12 col-lg-12" style="text-align: center; margin-top:10px">
+                    		    <div class="form-group">
+                                                      <button type="button" id="btn_regular" name="btn_regular" class="btn btn-warning btn-lg btn-block" style="height:80px;">REGULAR</button>
+                                					 
+                                </div>
+                    		    </div>
+              </div>
+              
+              
+               <div class="row">
+                                					 
+                    		    <div class="col-xs-12 col-md-12 col-lg-12" style="text-align: center; margin-top:10px">
+                    		    <div class="form-group">
+                                                      <button type="button" id="btn_malo" name="btn_malo" class="btn btn-danger btn-lg btn-block" style="height:80px;">MALO</button>
+                                					 
+                                </div>
+                    		    </div>
+              </div>
+    </div>        
+         
+         
+         
+         
+         
+         
+        
+	 
+
+	 
+	
+	
+	<script src="js/jquery.blockUI.js"></script>
+	<script type="text/javascript">
+	
+	$(document).ready( function (){
+		   pone_espera();
+		  
+	});
+		
+	function pone_espera(){
+	
+		   $.blockUI({ 
+				message: '<h4><img src="img/load.gif" /> Cargando...</h4>',
+				css: { 
+		            border: 'none', 
+		            padding: '15px', 
+		            backgroundColor: '#000', 
+		            '-webkit-border-radius': '10px', 
+		            '-moz-border-radius': '10px', 
+		            opacity: .5, 
+		            color: '#fff',
+		           
+	     		}
+	 });
+		
+	 setTimeout($.unblockUI, 500); 
+	 
+	}
+	</script>
+	
+	<script src="js/iniciar.js"></script>
+	
+	<!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+   
+
+ 
+</body>
+
+</html>
