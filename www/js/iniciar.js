@@ -1,7 +1,7 @@
 
-$(document).on("ready",checkConnection);
+$(document).on("ready",procesos_con_internet);
 
-
+/*
 
 var online = 0;
 function checkConnection() {
@@ -30,7 +30,7 @@ function checkConnection() {
 	}
 	
    }
-
+*/
 
 function procesos_con_internet() {
 
@@ -267,7 +267,7 @@ function procesos_con_internet() {
 
 
 
-
+/*
 
 
 function procesos_sin_internet() {
@@ -417,4 +417,4 @@ function procesos_sin_internet() {
 }
 
 
-
+*/
