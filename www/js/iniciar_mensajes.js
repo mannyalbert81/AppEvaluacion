@@ -4,6 +4,8 @@
 
 	var succes="";
 	var error="";
+	var inter="";
+	
 	
 	function getQueryVariable(variable)
 	{
@@ -21,7 +23,7 @@
 	
 	succes = getQueryVariable("succes");
 	error = getQueryVariable("error");
-	
+	inter = getQueryVariable("inter");
 
 	
 
@@ -42,7 +44,13 @@
 	    	
 		}else{}
 		   
-	    
+	    if(inter!=""){
+			
+	        swal("Ups...", "Tu dispositivo se encuentra sin internet.", "info");
+		    $("#cedula").val("");
+	    	
+		}else{}
+		   
 	}
 
 
