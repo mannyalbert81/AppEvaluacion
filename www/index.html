@@ -17,7 +17,7 @@
 	 
 	 
 	 
-	 <body>
+	 <body OnLoad="NoBack();">
 	 <img id="header"  style="width:100%" src="img/logo_inicio.jpg">
 	 <div  class="col-lg-12 col-xs-12 col-md-12" style="text-align: center; margin-top: 20px;">
 	   	    <h4><b>CALIFICA NUESTRA ATENCIÓN</b></h4>
@@ -75,7 +75,11 @@
          
          
          
-	
+	<script language="javascript">
+	function NoBack(){
+	history.go(1)
+	}
+	</script>
 	
 	<script src="js/iniciar_excelente.js"></script>
 	<script src="js/iniciar_mensajes.js"></script>
