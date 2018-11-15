@@ -1,6 +1,6 @@
 
 
-	$(document).on("ready",excelente);
+	$(document).on("ready",onDeviceReady);
 	
 	
 
