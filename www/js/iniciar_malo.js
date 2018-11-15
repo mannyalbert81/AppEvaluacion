@@ -4,7 +4,7 @@
 
 	function malo() {
 
-		 var base_url = 'http://192.168.1.129:4000/webcapremci/webservices_evaluacion/';
+		 var base_url = 'http://186.4.157.125:80/webcapremci/webservices_evaluacion/';
 			var pag_service = 'SincronizacionService.php?jsoncallback=?' ;
 			var nombre_usuarios = "";
 			
