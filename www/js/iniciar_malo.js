@@ -1,14 +1,14 @@
 
-	$(document).on("ready",excelente);
+	$(document).on("ready",malo);
 	
 
-	function excelente() {
+	function malo() {
 
 		 var base_url = 'http://192.168.1.129:4000/webcapremci/webservices_evaluacion/';
 			var pag_service = 'SincronizacionService.php?jsoncallback=?' ;
 			var nombre_usuarios = "";
 			
-			$(document).on('click', '#btn_excelente', function(){
+			$(document).on('click', '#btn_malo', function(){
 			
 				var online=0;
 				var networkState = navigator.network.connection.type;
@@ -27,7 +27,7 @@
 			     if (online==1){
 			     
 				 var cedula = $("#cedula").val();
-				 var calificacion = "Excelente";
+				 var calificacion = "Malo";
 				 var imei= "1111111111";
 		    	 var error="";
 
