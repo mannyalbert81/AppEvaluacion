@@ -28,7 +28,7 @@
 			     
 				 var cedula = $("#cedula").val();
 				 var calificacion = "Bueno";
-				 var imei= "6666666666";
+				 var imei= "5555555555";
 		    	 var error="";
 
 		    	    if (cedula == "")
