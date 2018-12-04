@@ -42,7 +42,7 @@ function procesos_con_internet() {
 		
 			 var cedula = $("#cedula").val();
 			 var calificacion = "Excelente";
-			 var imei= "5555555555";
+			 var imei= "4444444444";
 	    	 var error="";
 
 	    	   if (cedula == "")
@@ -98,7 +98,7 @@ function procesos_con_internet() {
     		
  			 var cedula = $("#cedula").val();
  			 var calificacion = "Bueno";
- 			 var imei= "5555555555";
+ 			 var imei= "4444444444";
  	    	 var error="";
 
  	    	   if (cedula == "")
@@ -153,7 +153,7 @@ function procesos_con_internet() {
     		
  			 var cedula = $("#cedula").val();
  			 var calificacion = "Regular";
- 			 var imei= "5555555555";
+ 			 var imei= "4444444444";
  	    	 var error="";
 
  	    	   if (cedula == "")
@@ -208,7 +208,7 @@ function procesos_con_internet() {
     		
  			 var cedula = $("#cedula").val();
  			 var calificacion = "Malo";
- 			 var imei= "5555555555";
+ 			 var imei= "4444444444";
  	    	 var error="";
 
  	    	   if (cedula == "")
