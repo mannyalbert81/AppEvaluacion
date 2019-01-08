@@ -57,12 +57,12 @@
 								nombre_usuarios  =  j.nombre_usuarios;
 							});
 	  	    				
-	  	    				 $("#cedula").val("");
+	  	    				 $("#cedula").val("9999999999");
 	  	    			   window.location.href = 'index.html?succes='+nombre_usuarios+'';
 	  	    			
 	  	    			   },
 	  	    			   error: function (jqXHR, textStatus, errorThrown) {
-	  	    				 $("#cedula").val("");
+	  	    				 $("#cedula").val("9999999999");
 	  	    			   window.location.href = "index.html?error='Error'";
 	  	     	    		    
 	  	    			  }
@@ -71,7 +71,7 @@
 		    	     }
 				
 			     }else{
-			    	 $("#cedula").val("");
+			    	 $("#cedula").val("9999999999");
 			    	 window.location.href = "index.html?inter='Error'";
 	  	     	    	
 			    	
