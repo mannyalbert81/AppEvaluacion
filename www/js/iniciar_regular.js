@@ -33,7 +33,7 @@
 
 		    	    if (cedula == "")
 			        {
-				    	$("#mensaje_cedula").text("Introduzca Cedula");
+				    	$("#mensaje_cedula").text("Introduzca Número Turno");
 			    		$("#mensaje_cedula").fadeIn("slow"); //Muestra mensaje de error
 			    		error="SI";
 			            return false;
@@ -57,12 +57,12 @@
 								nombre_usuarios  =  j.nombre_usuarios;
 							});
 	  	    				
-	  	    				 $("#cedula").val("9999999999");
+	  	    				 $("#cedula").val("");
 	  	    			   window.location.href = 'index.html?succes='+nombre_usuarios+'';
 	  	    			
 	  	    			   },
 	  	    			   error: function (jqXHR, textStatus, errorThrown) {
-	  	    				 $("#cedula").val("9999999999");
+	  	    				 $("#cedula").val("");
 	  	    			   window.location.href = "index.html?error='Error'";
 	  	     	    		    
 	  	    			  }
@@ -71,7 +71,7 @@
 		    	     }
 				
 			     }else{
-			    	 $("#cedula").val("9999999999");
+			    	 $("#cedula").val("");
 			    	 window.location.href = "index.html?inter='Error'";
 	  	     	    	
 			    	

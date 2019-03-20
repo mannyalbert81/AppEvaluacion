@@ -33,21 +33,21 @@
 		if(succes!=""){
 			var res = succes.replace("%20", " ");
 		   swal("Gracias por Calificarnos", "Hola "+res+" tu calificación se registro correctamente.", "success");	
-		   $("#cedula").val("9999999999");
+		   $("#cedula").val("");
 				
 		}else{}
 		
 	    if(error!=""){
 		
-	        swal("Gracias por Calificarnos", "Cedula no existe registrada en nuestra base de datos.", "error");
-		    $("#cedula").val("9999999999");
+	        swal("Gracias por Calificarnos", "Usted no tiene un turno generado.", "error");
+		    $("#cedula").val("");
 	    	
 		}else{}
 		   
 	    if(inter!=""){
 			
 	        swal("Ups...", "Tu dispositivo se encuentra sin internet.", "info");
-		    $("#cedula").val("9999999999");
+		    $("#cedula").val("");
 	    	
 		}else{}
 		   
