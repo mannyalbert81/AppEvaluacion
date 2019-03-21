@@ -4,9 +4,10 @@
 
 	function regular() {
 
-		 var base_url = 'http://186.4.157.125:80/webcapremci/webservices_evaluacion/';
+		    var base_url = 'http://186.4.157.125:80/webcapremci/webservices_evaluacion/';
 			var pag_service = 'SincronizacionTurnosService.php?jsoncallback=?' ;
 			var nombre_usuarios = "";
+			
 			
 			$(document).on('click', '#btn_regular', function(){
 			
@@ -28,7 +29,7 @@
 			     
 				 var cedula = $("#cedula").val();
 				 var calificacion = "Regular";
-				 var imei= "2222222222";
+				 var imei= "7777777777";
 		    	 var error="";
 
 		    	    if (cedula == "")
