@@ -5,7 +5,7 @@
 	function malo() {
 
 		 var base_url = 'http://186.4.157.125:80/webcapremci/webservices_evaluacion/';
-			var pag_service = 'SincronizacionService.php?jsoncallback=?' ;
+			var pag_service = 'SincronizacionTurnosService.php?jsoncallback=?' ;
 			var nombre_usuarios = "";
 			
 			$(document).on('click', '#btn_malo', function(){
@@ -28,7 +28,7 @@
 			     
 				 var cedula = $("#cedula").val();
 				 var calificacion = "Malo";
-				 var imei= "9999999999";
+				 var imei= "1111111111";
 		    	 var error="";
 
 		    	    if (cedula == "")
