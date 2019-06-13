@@ -5,7 +5,7 @@
 	function malo() {
 
 		 var base_url = 'http://186.4.157.125:80/webcapremci/webservices_evaluacion/';
-			var pag_service = 'SincronizacionTurnosService.php?jsoncallback=?' ;
+			var pag_service = 'SincronizacionService.php?jsoncallback=?' ;
 			var nombre_usuarios = "";
 			
 			$(document).on('click', '#btn_malo', function(){
@@ -28,12 +28,12 @@
 			     
 				 var cedula = $("#cedula").val();
 				 var calificacion = "Malo";
-				 var imei= "1000000000";
+				 var imei= "1100000000";
 		    	 var error="";
 
 		    	    if (cedula == "")
 			        {
-				    	$("#mensaje_cedula").text("Introduzca Número Turno");
+				    	$("#mensaje_cedula").text("Introduzca Número Cedula");
 			    		$("#mensaje_cedula").fadeIn("slow"); //Muestra mensaje de error
 			    		error="SI";
 			            return false;
